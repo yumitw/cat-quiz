@@ -1,0 +1,11 @@
+{
+  "quizzes": [
+    {
+      "id": "cat-personality",
+      "title": "你是哪種貓咪?",
+      "description": "12 題測出你的貓咪人格,還有你的好朋友與相剋組合!",
+      "questionCount": 12,
+      "art": { "base": "#F6A94A", "ear": "normal", "pattern": "stripes", "p1": "#E08A2E", "eye": "#5B4632" }
+    }
+  ]
+}

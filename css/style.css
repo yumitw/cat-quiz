@@ -1,0 +1,264 @@
+/* ===== 毛毛心理測驗所 — 溫暖奶茶色系 ===== */
+:root {
+  --bg: #F6EEE3;          /* 米色底 */
+  --bg-deep: #EFE2D0;
+  --card: #FFFDF8;        /* 卡片乳白 */
+  --milk-tea: #C9A87C;    /* 奶茶 */
+  --milk-tea-dark: #A9855C;
+  --cocoa: #6B5138;       /* 深可可,主要文字 */
+  --cocoa-light: #93795C; /* 次要文字 */
+  --accent: #E8A87C;      /* 蜜橘點綴 */
+  --friend: #7FA86B;
+  --rival: #D97B5F;
+  --radius: 20px;
+  --shadow: 0 6px 20px rgba(107, 81, 56, 0.12);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+[hidden] { display: none !important; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+  background: var(--bg);
+  background-image: radial-gradient(circle at 20% 15%, rgba(232, 168, 124, 0.10) 0 120px, transparent 120px),
+                    radial-gradient(circle at 85% 70%, rgba(201, 168, 124, 0.12) 0 160px, transparent 160px);
+  color: var(--cocoa);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+.page {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== 首頁 ===== */
+.site-header { text-align: center; padding: 12px 0 24px; }
+.site-logo { width: 96px; margin: 0 auto 8px; animation: bob 3s ease-in-out infinite; }
+.site-logo svg { width: 100%; height: auto; display: block; }
+.site-title { font-size: 1.7rem; letter-spacing: 0.05em; }
+.site-subtitle { color: var(--cocoa-light); font-size: 1rem; margin-top: 4px; }
+
+.quiz-list { display: flex; flex-direction: column; gap: 16px; flex: 1; }
+.loading { text-align: center; color: var(--cocoa-light); padding: 40px 0; }
+
+.quiz-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+  text-decoration: none;
+  color: inherit;
+  border: 2px solid transparent;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+  animation: rise 0.5s ease both;
+}
+.quiz-card:active { transform: scale(0.97); border-color: var(--milk-tea); }
+.quiz-card-art { width: 72px; flex-shrink: 0; }
+.quiz-card-art svg { width: 100%; height: auto; display: block; }
+.quiz-card-body { flex: 1; min-width: 0; }
+.quiz-card-title { font-size: 1.2rem; font-weight: 700; }
+.quiz-card-desc { font-size: 0.9rem; color: var(--cocoa-light); margin-top: 2px; }
+.quiz-card-meta { font-size: 0.8rem; color: var(--milk-tea-dark); margin-top: 6px; }
+.quiz-card-go {
+  flex-shrink: 0;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.site-footer { text-align: center; color: var(--cocoa-light); font-size: 0.85rem; padding-top: 32px; }
+
+/* ===== 按鈕 ===== */
+.btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: 999px;
+  padding: 16px 24px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn:active { transform: scale(0.96); }
+.btn + .btn { margin-top: 12px; }
+.btn-big { padding: 18px 24px; font-size: 1.2rem; }
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent), var(--milk-tea));
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(232, 168, 124, 0.45);
+}
+.btn-secondary { background: var(--card); color: var(--cocoa); box-shadow: var(--shadow); }
+.btn-ghost { background: transparent; color: var(--cocoa-light); text-decoration: underline; font-weight: 400; font-size: 1rem; }
+
+/* ===== 測驗開始畫面 ===== */
+.screen { flex: 1; display: flex; flex-direction: column; justify-content: center; animation: rise 0.4s ease both; }
+.start-art { width: 160px; margin: 0 auto 16px; animation: bob 3s ease-in-out infinite; }
+.start-art svg { width: 100%; height: auto; display: block; }
+.quiz-title { text-align: center; font-size: 1.8rem; margin-bottom: 8px; }
+.quiz-desc { text-align: center; color: var(--cocoa-light); margin-bottom: 32px; white-space: pre-line; }
+
+/* ===== 答題畫面 ===== */
+.progress-wrap { padding: 8px 0 20px; }
+.progress-label { font-size: 0.9rem; color: var(--milk-tea-dark); font-weight: 700; margin-bottom: 6px; text-align: center; }
+.progress-bar { height: 10px; background: var(--bg-deep); border-radius: 999px; overflow: hidden; }
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--milk-tea), var(--accent));
+  border-radius: 999px;
+  transition: width 0.35s ease;
+}
+
+.question-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px 22px;
+}
+.question-card.slide-in { animation: slideIn 0.3s ease both; }
+.question-text { font-size: 1.35rem; line-height: 1.5; margin-bottom: 24px; text-align: center; }
+
+.options { display: flex; flex-direction: column; gap: 12px; }
+.option-btn {
+  width: 100%;
+  text-align: left;
+  background: var(--bg);
+  border: 2px solid var(--bg-deep);
+  border-radius: 16px;
+  padding: 16px 18px;
+  font-size: 1.05rem;
+  font-family: inherit;
+  color: var(--cocoa);
+  line-height: 1.5;
+  cursor: pointer;
+  transition: transform 0.12s ease, background 0.12s ease, border-color 0.12s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.option-btn:active { transform: scale(0.97); }
+.option-btn.picked {
+  background: #FBEBDD;
+  border-color: var(--accent);
+  animation: pulse 0.3s ease;
+}
+
+/* ===== 結果畫面 ===== */
+.result-intro { text-align: center; color: var(--cocoa-light); margin-bottom: 12px; animation: rise 0.4s ease both; }
+
+.result-card {
+  background: var(--card);
+  border: 3px solid var(--milk-tea);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: 28px 22px 22px;
+  text-align: center;
+  animation: reveal 0.65s cubic-bezier(0.2, 1.4, 0.4, 1) both;
+}
+.result-art { width: 150px; margin: 0 auto 12px; animation: bob 3s ease-in-out infinite; }
+.result-art svg { width: 100%; height: auto; display: block; }
+.result-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent), var(--milk-tea));
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border-radius: 999px;
+  padding: 8px 26px;
+  letter-spacing: 0.08em;
+}
+.result-tagline { font-size: 1.15rem; font-weight: 700; color: var(--milk-tea-dark); margin-top: 10px; }
+.result-desc { text-align: left; margin-top: 14px; font-size: 1rem; }
+
+.result-pairs { display: flex; gap: 10px; margin-top: 18px; }
+.pair {
+  flex: 1;
+  border-radius: 14px;
+  padding: 10px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.pair-friend { background: rgba(127, 168, 107, 0.14); }
+.pair-rival { background: rgba(217, 123, 95, 0.14); }
+.pair-label { font-size: 0.8rem; color: var(--cocoa-light); }
+.pair-value { font-size: 1.05rem; font-weight: 700; }
+.pair-friend .pair-value { color: var(--friend); }
+.pair-rival .pair-value { color: var(--rival); }
+
+.result-cta {
+  margin-top: 18px;
+  font-size: 0.95rem;
+  background: var(--bg);
+  border-radius: 12px;
+  padding: 12px;
+  color: var(--milk-tea-dark);
+  font-weight: 700;
+}
+
+.result-actions { margin-top: 24px; animation: rise 0.5s ease 0.5s both; }
+
+/* ===== 其他 ===== */
+.error-box { text-align: center; color: var(--rival); padding: 40px 0; }
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--cocoa);
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 99;
+}
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* ===== 動畫 ===== */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(28px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.96); }
+  100% { transform: scale(1); }
+}
+@keyframes reveal {
+  0% { opacity: 0; transform: scale(0.6) rotate(-3deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0); }
+}
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@media (min-width: 600px) {
+  .page { padding-top: 48px; }
+}

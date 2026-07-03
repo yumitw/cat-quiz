@@ -1,0 +1,229 @@
+{
+  "id": "cat-personality",
+  "title": "你是哪種貓咪?",
+  "description": "12 題快速心理測驗\n測出你的貓咪人格、好朋友配對和相剋組合!",
+  "shareTitle": "你是哪種貓咪?",
+  "shareText": "我測出來是「{result}」!本測驗共有 12 種貓咪,快來測看看你是哪一種,看我們是什麼組合 🐱",
+  "resultCta": "本測驗共有 12 種貓咪,快叫朋友來測,看你們是哪種組合!",
+  "startArt": { "base": "#F6A94A", "ear": "normal", "pattern": "stripes", "p1": "#E08A2E", "eye": "#5B4632" },
+  "questions": [
+    {
+      "text": "週五晚上,你通常在幹嘛?",
+      "options": [
+        { "text": "在家耍廢追劇,哪都不想去", "scores": { "orange": 2 } },
+        { "text": "跟朋友聚餐唱歌到半夜", "scores": { "siamese": 2 } },
+        { "text": "一個人去看小眾展覽或表演", "scores": { "sphynx": 1, "russian": 1 } },
+        { "text": "早就排好行程,照表操課", "scores": { "shorthair": 2 } }
+      ]
+    },
+    {
+      "text": "群組突然吵起來,你會?",
+      "options": [
+        { "text": "潛水看戲,但全部看在眼裡", "scores": { "russian": 2 } },
+        { "text": "跳出來講笑話緩和氣氛", "scores": { "calico": 1, "siamese": 1 } },
+        { "text": "私訊安慰吵輸的那一個", "scores": { "ragdoll": 2 } },
+        { "text": "已讀。關我什麼事?", "scores": { "black": 1, "sphynx": 1 } }
+      ]
+    },
+    {
+      "text": "朋友約吃飯,你最在意的是?",
+      "options": [
+        { "text": "有得吃就好,我都可以", "scores": { "orange": 1, "tuxedo": 1 } },
+        { "text": "餐廳的氣氛和質感", "scores": { "persian": 2 } },
+        { "text": "跟誰去,比吃什麼重要", "scores": { "ragdoll": 1, "fold": 1 } },
+        { "text": "交通方便、CP 值要高", "scores": { "shorthair": 1, "tuxedo": 1 } }
+      ]
+    },
+    {
+      "text": "你的訊息回覆速度是?",
+      "options": [
+        { "text": "秒讀秒回,話匣子打開就停不了", "scores": { "siamese": 2 } },
+        { "text": "看到了,但想好才回", "scores": { "russian": 1, "black": 1 } },
+        { "text": "忘記回,三天後才突然想到", "scores": { "orange": 2 } },
+        { "text": "用貼圖和梗圖回,一圖勝千言", "scores": { "calico": 2 } }
+      ]
+    },
+    {
+      "text": "遇到麻煩事,你的第一反應是?",
+      "options": [
+        { "text": "先吃飽再說,船到橋頭自然直", "scores": { "orange": 2 } },
+        { "text": "立刻列清單,分析怎麼解決", "scores": { "shorthair": 2 } },
+        { "text": "找朋友討拍取暖", "scores": { "fold": 2 } },
+        { "text": "自己默默扛下來", "scores": { "maine": 1, "black": 1 } }
+      ]
+    },
+    {
+      "text": "你在朋友群裡扮演的角色是?",
+      "options": [
+        { "text": "開心果,負責搞笑", "scores": { "calico": 2 } },
+        { "text": "靠山,大家有事第一個找你", "scores": { "maine": 2 } },
+        { "text": "神祕人,大家覺得你深不可測", "scores": { "black": 2 } },
+        { "text": "軍師,關鍵時刻才開口", "scores": { "russian": 2 } }
+      ]
+    },
+    {
+      "text": "你買東西的風格是?",
+      "options": [
+        { "text": "精挑細選,寧缺勿濫", "scores": { "persian": 2 } },
+        { "text": "朋友推薦什麼就買什麼", "scores": { "fold": 1, "ragdoll": 1 } },
+        { "text": "專挑沒人聽過的小眾品牌", "scores": { "sphynx": 2 } },
+        { "text": "哪個划算買哪個", "scores": { "tuxedo": 2 } }
+      ]
+    },
+    {
+      "text": "到新環境(新公司/新班級),你會?",
+      "options": [
+        { "text": "很快就跟大家混熟", "scores": { "siamese": 1, "tuxedo": 1 } },
+        { "text": "先觀察一陣子再說", "scores": { "russian": 1, "black": 1 } },
+        { "text": "找一兩個人深交就好", "scores": { "ragdoll": 1, "maine": 1 } },
+        { "text": "做自己,合得來的自然會靠近", "scores": { "sphynx": 1, "persian": 1 } }
+      ]
+    },
+    {
+      "text": "朋友難過來找你,你會?",
+      "options": [
+        { "text": "帶他去大吃一頓", "scores": { "orange": 1, "tuxedo": 1 } },
+        { "text": "靜靜聽他說,遞衛生紙", "scores": { "ragdoll": 2 } },
+        { "text": "幫他分析問題、給出解法", "scores": { "shorthair": 1, "russian": 1 } },
+        { "text": "使出渾身解數逗他笑", "scores": { "calico": 1, "siamese": 1 } }
+      ]
+    },
+    {
+      "text": "你理想中的假期是?",
+      "options": [
+        { "text": "高級飯店躺好躺滿,配精緻下午茶", "scores": { "persian": 2 } },
+        { "text": "揪一大群朋友出去玩", "scores": { "siamese": 1, "fold": 1 } },
+        { "text": "在家。哪都不想去", "scores": { "orange": 1, "black": 1 } },
+        { "text": "說走就走的隨性旅行", "scores": { "tuxedo": 1, "sphynx": 1 } }
+      ]
+    },
+    {
+      "text": "身邊的人最常怎麼形容你?",
+      "options": [
+        { "text": "可愛,讓人想保護", "scores": { "fold": 2 } },
+        { "text": "可靠,跟你在一起很有安全感", "scores": { "maine": 1, "shorthair": 1 } },
+        { "text": "特別,跟別人都不一樣", "scores": { "sphynx": 1, "calico": 1 } },
+        { "text": "溫柔,超級好相處", "scores": { "ragdoll": 2 } }
+      ]
+    },
+    {
+      "text": "最後一題:你的撒嬌功力?",
+      "options": [
+        { "text": "滿級,而且我很清楚怎麼用", "scores": { "fold": 2 } },
+        { "text": "只對特定的人展現", "scores": { "black": 1, "persian": 1 } },
+        { "text": "我不撒嬌,都是別人對我撒嬌", "scores": { "maine": 2 } },
+        { "text": "我的撒嬌方式就是講幹話", "scores": { "calico": 1, "siamese": 1 } }
+      ]
+    }
+  ],
+  "results": {
+    "orange": {
+      "name": "橘貓",
+      "tagline": "慵懶樂天派",
+      "description": "天塌下來先吃飽再說。你的人生哲學是「沒有什麼事是一頓飯解決不了的」,朋友都被你的鬆弛感療癒,雖然偶爾懶到讓人想巴頭。",
+      "friend": "三花貓",
+      "rival": "美國短毛貓",
+      "weight": 1,
+      "art": { "base": "#F6A94A", "ear": "normal", "pattern": "stripes", "p1": "#E08A2E", "eye": "#5B4632" }
+    },
+    "black": {
+      "name": "黑貓",
+      "tagline": "高冷神祕系",
+      "description": "外表生人勿近,內心戲比八點檔還精彩。你只對真正的自己人展現溫柔,被你選中的朋友都知道自己中了大獎。",
+      "friend": "俄羅斯藍貓",
+      "rival": "暹羅貓",
+      "weight": 5,
+      "art": { "base": "#4E4A55", "ear": "normal", "pattern": "none", "eye": "#E8B34B" }
+    },
+    "calico": {
+      "name": "三花貓",
+      "tagline": "古靈精怪型",
+      "description": "腦迴路清奇,永遠猜不到你下一步。群組裡的梗圖供應商,沒有你的聊天室會安靜得像圖書館。",
+      "friend": "暹羅貓",
+      "rival": "俄羅斯藍貓",
+      "weight": 7,
+      "art": { "base": "#FFF3E4", "ear": "normal", "pattern": "calico", "p1": "#F6A94A", "p2": "#5B4A44", "eye": "#5B4632" }
+    },
+    "ragdoll": {
+      "name": "布偶貓",
+      "tagline": "溫柔黏人款",
+      "description": "行走的療癒系,朋友的情緒垃圾桶(自願的)。你最大的優點是溫柔,最大的缺點是太溫柔,不會拒絕人。",
+      "friend": "折耳貓",
+      "rival": "無毛貓",
+      "weight": 6,
+      "art": { "base": "#F3E9DC", "ear": "normal", "pattern": "points", "p1": "#B99B78", "eye": "#7FA8C9" }
+    },
+    "siamese": {
+      "name": "暹羅貓",
+      "tagline": "話癆社交王",
+      "description": "一天不講話會生病。你是群組已讀秒回第一名,朋友聚會的氣氛擔當,安靜下來大家反而會擔心你是不是怎麼了。",
+      "friend": "三花貓",
+      "rival": "黑貓",
+      "weight": 4,
+      "art": { "base": "#EFE3D0", "ear": "normal", "pattern": "points", "p1": "#6B5138", "eye": "#7FA8C9" }
+    },
+    "shorthair": {
+      "name": "美國短毛貓",
+      "tagline": "穩重可靠掛",
+      "description": "群組裡唯一會記得訂位、查營業時間的人。大家嘴上叫你老媽子,心裡都知道沒有你這團早就散了。",
+      "friend": "緬因貓",
+      "rival": "橘貓",
+      "weight": 2,
+      "art": { "base": "#BCC7D1", "ear": "normal", "pattern": "stripes", "p1": "#8E9BA8", "eye": "#5B8A5B" }
+    },
+    "persian": {
+      "name": "波斯貓",
+      "tagline": "優雅貴族範",
+      "description": "對生活品質有堅持,寧缺勿濫。別人喝手搖你喝手沖,別人躺沙發你躺「有設計感的」沙發。精緻是你的本能。",
+      "friend": "布偶貓",
+      "rival": "賓士貓",
+      "weight": 10,
+      "art": { "base": "#F8F3EC", "ear": "normal", "pattern": "fluffy", "p1": "#E3D5C2", "eye": "#C98A4B" }
+    },
+    "fold": {
+      "name": "折耳貓",
+      "tagline": "軟萌討拍系",
+      "description": "天生自帶「快來疼我」氣場。你很清楚自己可愛,而且不介意使用這項武器。撒嬌是戰術,心軟的朋友都是你的俘虜。",
+      "friend": "布偶貓",
+      "rival": "俄羅斯藍貓",
+      "weight": 11,
+      "art": { "base": "#D9C7B2", "ear": "fold", "pattern": "none", "eye": "#5B4632" }
+    },
+    "sphynx": {
+      "name": "無毛貓",
+      "tagline": "特立獨行怪",
+      "description": "別人的眼光是什麼?能吃嗎?你活在自己的宇宙裡,品味小眾但堅定,懂你的人覺得你酷到不行。",
+      "friend": "三花貓",
+      "rival": "美國短毛貓",
+      "weight": 12,
+      "art": { "base": "#E8C9C0", "ear": "big", "pattern": "wrinkles", "p1": "#D3A99E", "eye": "#5B8A5B" }
+    },
+    "maine": {
+      "name": "緬因貓",
+      "tagline": "大隻溫柔漢",
+      "description": "外表是大佬,內心是棉花糖。你話不多但很有存在感,朋友有事第一個想到你,因為你看起來就很能扛(實際上也真的能)。",
+      "friend": "折耳貓",
+      "rival": "暹羅貓",
+      "weight": 8,
+      "art": { "base": "#B58A5F", "ear": "big", "pattern": "stripes", "p1": "#8F6A44", "eye": "#C98A4B" }
+    },
+    "russian": {
+      "name": "俄羅斯藍貓",
+      "tagline": "安靜觀察家",
+      "description": "群組潛水冠軍,但其實什麼都看在眼裡。你不愛出風頭,可是每次開口都一針見血,是朋友群裡的隱藏軍師。",
+      "friend": "黑貓",
+      "rival": "三花貓",
+      "weight": 9,
+      "art": { "base": "#9FB4C7", "ear": "normal", "pattern": "none", "eye": "#5B8A5B" }
+    },
+    "tuxedo": {
+      "name": "賓士貓",
+      "tagline": "街頭生存高手",
+      "description": "適應力點滿的社會人。到哪都能混得開,吃路邊攤也行、吃高級餐廳也行,是朋友眼中「丟到哪都死不了」的存在。",
+      "friend": "橘貓",
+      "rival": "波斯貓",
+      "weight": 3,
+      "art": { "base": "#4E4A55", "ear": "normal", "pattern": "tuxedo", "eye": "#E8B34B" }
+    }
+  }
+}

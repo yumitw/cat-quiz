@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>測驗進行中|毛毛心理測驗所</title>
+  <meta property="og:title" content="毛毛心理測驗所">
+  <meta property="og:description" content="超好玩的心理測驗,快來測測看!">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="page">
+    <!-- 測驗開始畫面 -->
+    <section id="screen-start" class="screen" hidden>
+      <div class="start-art" id="start-art" aria-hidden="true"></div>
+      <h1 class="quiz-title" id="quiz-title"></h1>
+      <p class="quiz-desc" id="quiz-desc"></p>
+      <button class="btn btn-primary btn-big" id="btn-start">開始測驗 🐾</button>
+      <a class="btn btn-ghost" href="./">回測驗列表</a>
+    </section>
+
+    <!-- 答題畫面 -->
+    <section id="screen-question" class="screen" hidden>
+      <div class="progress-wrap">
+        <div class="progress-label" id="progress-label"></div>
+        <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+      </div>
+      <div class="question-card" id="question-card">
+        <h2 class="question-text" id="question-text"></h2>
+        <div class="options" id="options"></div>
+      </div>
+    </section>
+
+    <!-- 結果畫面 -->
+    <section id="screen-result" class="screen" hidden>
+      <p class="result-intro">你的測驗結果是……</p>
+      <div class="result-card" id="result-card">
+        <div class="result-art" id="result-art" aria-hidden="true"></div>
+        <div class="result-badge" id="result-name"></div>
+        <div class="result-tagline" id="result-tagline"></div>
+        <p class="result-desc" id="result-desc"></p>
+        <div class="result-pairs">
+          <div class="pair pair-friend">
+            <span class="pair-label">💚 好朋友</span>
+            <span class="pair-value" id="result-friend"></span>
+          </div>
+          <div class="pair pair-rival">
+            <span class="pair-label">⚡ 相剋</span>
+            <span class="pair-value" id="result-rival"></span>
+          </div>
+        </div>
+        <p class="result-cta" id="result-cta"></p>
+      </div>
+      <div class="result-actions">
+        <button class="btn btn-primary btn-big" id="btn-share">分享給朋友 💌</button>
+        <button class="btn btn-secondary" id="btn-retry">再測一次 🔄</button>
+        <a class="btn btn-ghost" href="./">回測驗列表</a>
+      </div>
+    </section>
+
+    <p id="error-box" class="error-box" hidden></p>
+  </main>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/cat-art.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>

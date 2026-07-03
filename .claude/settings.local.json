@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git --version)",
+      "Bash(command -v python py node npx)",
+      "Bash(py --version)",
+      "Bash(python -c \"print\\('ok'\\)\")"
+    ]
+  }
+}
